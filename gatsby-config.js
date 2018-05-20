@@ -1,6 +1,10 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby Default Starter'
+		title: 'Wise Starter',
+		author: 'Tom Pichaud',
+		description: 'Starter for Gatsby on netlify.',
+		lang: 'en',
+		siteUrl: 'https://site.com'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
