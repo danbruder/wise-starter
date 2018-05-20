@@ -9,3 +9,7 @@ cache: yarn
 branches:
   only:
     - master
+
+script:
+  - "yarn test"
+  - "yarn build"
