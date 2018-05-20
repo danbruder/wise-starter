@@ -9,7 +9,7 @@ module.exports = {
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		{
-			resolve: `gatsby-plugin-favicon`,
+			resolve: 'gatsby-plugin-favicon',
 			options: {
 				logo: './src/assets/icon.png',
 				injectHTML: true,
@@ -27,7 +27,7 @@ module.exports = {
 			}
 		},
 		{
-			resolve: `gatsby-plugin-manifest`,
+			resolve: 'gatsby-plugin-manifest',
 			options: {
 				name: 'WiseStarter',
 				short_name: 'WiseStarter',
