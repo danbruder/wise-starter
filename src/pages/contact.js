@@ -6,8 +6,7 @@ import Form from '../components/form'
 const ContactPage = ({ transition }) => (
 	<div style={transition && transition.style}>
 		<Helmet title="Contact" />
-		<Form>
-			<input type="hidden" name="form-name" value="contact" />
+		<Form name="contact" action="/thanks">
 			<input
 				type="text"
 				name="name"
