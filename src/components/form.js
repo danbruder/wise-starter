@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Form = props => (
 	<form
@@ -13,5 +14,11 @@ const Form = props => (
 		<button type="submit">Send</button>
 	</form>
 )
+
+Form.propTypes = {
+	action: PropTypes.string,
+	name: PropTypes.string,
+	children: PropTypes.func
+}
 
 export default Form

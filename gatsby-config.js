@@ -4,7 +4,7 @@ module.exports = {
 		author: 'Tom Pichaud',
 		description: 'Starter for Gatsby on netlify.',
 		lang: 'en',
-		siteUrl: 'https://site.com'
+		url: 'https://wise-starter.netlify.com'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
