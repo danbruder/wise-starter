@@ -5,6 +5,9 @@
 	"name": "wise-starter",
 	"description": "Wise starter for Gatsby on Netlify.",
 	"version": "1.0.0",
+	"bugs": {
+		"url": "https://github.com/TomPichaud/wise-starter/issues"
+	},
 	"dependencies": {
 		"gatsby": "^1.9.247",
 		"gatsby-link": "^1.6.40",
