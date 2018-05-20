@@ -5,8 +5,9 @@ const Form = props => (
 		name="contact"
 		method="post"
 		data-netlify="true"
-		data-netlify-honeypot="bot-field"
-		action="/thanks/">
+		data-netlify-honeypot="turing-test"
+		action="/thanks">
+		<input type="hidden" name="turing-test" />
 		{props.children}
 		<button type="submit">Send</button>
 	</form>
