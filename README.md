@@ -1,4 +1,4 @@
-# Wise starter for Gatsby on Netlify.
+# Wise starter for Gatsby on Netlify
 
   - Helmet integration
   - Page transitions
