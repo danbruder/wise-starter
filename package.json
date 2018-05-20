@@ -1,0 +1,19 @@
+{
+  "author": "Tom Pichaud",
+  "email": "tompichaud@me.com",
+  "license": "UNLICENSED",
+  "name": "wise-starter",
+  "description": "Starter for Gatsby on netlify.",
+  "version": "1.0.0",
+  "dependencies": {
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "react-helmet": "^5.2.0"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "homepage": "https://github.com/TomPichaud/wise-starter"
+}
