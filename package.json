@@ -1,7 +1,7 @@
 {
 	"author": "Tom Pichaud",
 	"email": "tompichaud@me.com",
-	"license": "mit",
+	"license": "MIT",
 	"name": "wise-starter",
 	"description": "Wise starter for Gatsby on Netlify.",
 	"version": "1.0.0",
@@ -16,6 +16,7 @@
 	},
 	"scripts": {
 		"dev": "gatsby develop",
+		"test": "echo \"Warn: no test specified\" && exit 0",
 		"build": "gatsby build"
 	},
 	"homepage": "https://github.com/TomPichaud/wise-starter"
