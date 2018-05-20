@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/TomPichaud/wise-starter.svg?branch=master)](https://travis-ci.org/TomPichaud/wise-starter)
+
 # Wise starter for Gatsby on Netlify
 
   - Helmet integration
