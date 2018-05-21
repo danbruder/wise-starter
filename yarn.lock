@@ -9032,9 +9032,9 @@ window-size@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.2.0.tgz#b4315bb4214a3d7058ebeee892e13fa24d98b075"
 
-wise-typography-theme@^1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/wise-typography-theme/-/wise-typography-theme-1.0.13.tgz#b6a8684e46b21d149d368c0d103a9c656c311952"
+wise-typography-theme@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/wise-typography-theme/-/wise-typography-theme-1.0.14.tgz#ca061f132ef90e22a5d813e8d77b111708e564c9"
   dependencies:
     compass-vertical-rhythm "^1.2.1"
     gray-percentage "^2.0.0"

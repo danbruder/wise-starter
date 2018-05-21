@@ -15,11 +15,13 @@ const Header = ({ siteTitle }) => (
 			}}>
 			<h1 style={{ margin: 0 }}>
 				<Link
+					exact
 					to="/"
 					style={{
 						color: 'white',
 						textDecoration: 'none'
-					}}>
+					}}
+					activeClassName="active">
 					{siteTitle}
 				</Link>
 			</h1>
