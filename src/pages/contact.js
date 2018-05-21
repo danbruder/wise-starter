@@ -6,6 +6,12 @@ import Form from '../components/form'
 const ContactPage = ({ transition }) => (
 	<div style={transition && transition.style}>
 		<Helmet title="Contact" />
+		<h1
+			style={{
+				textAlign: 'center'
+			}}>
+			Contact Form
+		</h1>
 		<Form name="contact" action="/thanks">
 			<input
 				type="text"

@@ -5,8 +5,8 @@ import Link from 'gatsby-link'
 const ThanksPage = ({ transition }) => (
 	<div style={transition && transition.style}>
 		<Helmet title="Thanks" />
-		<h1>Hi from the thanks page</h1>
-		<p>Welcome to thanks</p>
+		<h1>Thanks</h1>
+		<p>Your form has been submitted.</p>
 		<Link to="/">Go back to the homepage</Link>
 	</div>
 )
