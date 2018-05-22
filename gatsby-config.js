@@ -4,7 +4,7 @@ module.exports = {
 		author: 'Tom Pichaud',
 		description: 'Starter for Gatsby on netlify.',
 		lang: 'en',
-		url: 'https://wise-starter.netlify.com'
+		siteUrl: 'https://wise-starter.netlify.com'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -44,6 +44,8 @@ module.exports = {
 				display: 'minimal-ui',
 				icon: 'src/assets/icon.png'
 			}
-		}
+		},
+		'gatsby-plugin-sitemap',
+		'gatsby-plugin-offline'
 	]
 }

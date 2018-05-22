@@ -6,8 +6,9 @@
 - [x] Netlify’s Form handling component
 - [x] Typography.js implementation
 - [x] SASS support & CSS Modules demonstration
+- [X] Offline support (cache issue on frequent changes ?)
+- [X] Sitemap generator
 - [ ] Subfont implementation
-- [ ] Offline support (cache issue on frequent changes ?)
 
 Demo: https://wise-starter.netlify.com
 
