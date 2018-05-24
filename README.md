@@ -2,12 +2,12 @@
 
 - [x] Helmet
 - [x] Page Transitions
-- [x] Favicon
-- [x] Manifest
 - [x] Netlify’s Form component
 - [x] Typography.js
-- [x] JSS support
+- [x] JSS
 - [X] Offline
+- [x] Favicon
+- [x] Manifest
 - [X] Sitemap
 - [ ] Subfont
 
