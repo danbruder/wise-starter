@@ -14,7 +14,7 @@ module.exports = {
 				pathToConfigModule: `src/utils/typography.js`
 			}
 		},
-		'gatsby-plugin-sass',
+		'gatsby-plugin-jss',
 		{
 			resolve: 'gatsby-plugin-favicon',
 			options: {

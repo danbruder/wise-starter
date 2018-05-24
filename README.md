@@ -1,14 +1,15 @@
 # Wise starter for Gatsby on Netlify
 
-- [x] Helmet integration
-- [x] Page transitions
-- [x] Favicon and Manifest generator
-- [x] Netlify’s Form handling component
-- [x] Typography.js implementation
-- [x] SASS support & CSS Modules demonstration
-- [X] Offline support (cache issue on frequent changes ?)
-- [X] Sitemap generator
-- [ ] Subfont implementation
+- [x] Helmet
+- [x] Page Transitions
+- [x] Favicon
+- [x] Manifest
+- [x] Netlify’s Form component
+- [x] Typography.js
+- [x] JSS support
+- [X] Offline
+- [X] Sitemap
+- [ ] Subfont
 
 Demo: https://wise-starter.netlify.com
 

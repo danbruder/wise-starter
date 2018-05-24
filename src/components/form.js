@@ -1,25 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './form.module.sass'
 
-const Form = props => (
+const Form = ({ action, className, name, children }) => (
 	<form
 		name="contact"
 		method="post"
 		data-netlify="true"
 		data-netlify-honeypot="turing-test"
-		action={props.action}
-		className={styles.form}>
-		<input type="hidden" name="form-name" value={props.name} />
+		action={action}
+		className={className}>
+		<input type="hidden" name="form-name" value={name} />
 		<input type="hidden" name="turing-test" />
-		{props.children}
-		<button type="submit">Send</button>
+		{children}
 	</form>
 )
 
 Form.propTypes = {
 	action: PropTypes.string,
 	name: PropTypes.string,
+	className: PropTypes.string,
 	children: PropTypes.array
 }
 

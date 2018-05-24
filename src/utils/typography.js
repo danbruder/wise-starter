@@ -1,6 +1,6 @@
 import Typography from 'typography'
-import wiseTheme from 'wise-typography-theme'
+import Theme from '../styles/theme.js'
 
-const typography = new Typography(wiseTheme)
+const typography = new Typography(Theme)
 
 export default typography

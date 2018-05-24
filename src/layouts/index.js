@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import injectSheet from 'react-jss'
 
 import Header from '../components/header'
 
-const Layout = ({ children, data }) => (
+import styles from '../styles/layouts'
+
+const Layout = ({ classes, children, data }) => (
 	<div>
 		<Helmet
 			titleTemplate={`%s | ${data.site.siteMetadata.title}`}
@@ -21,15 +24,11 @@ const Layout = ({ children, data }) => (
 			]}
 			htmlAttributes={{ lang: `${data.site.siteMetadata.lang}` }}
 		/>
-		<Header siteTitle={data.site.siteMetadata.title} />
-		<div
-			style={{
-				margin: '0 auto',
-				maxWidth: 960,
-				padding: '1.45rem 1.0875rem'
-			}}>
-			{children()}
-		</div>
+		<Header
+			siteTitle={data.site.siteMetadata.title}
+			className={classes.header}
+		/>
+		<div className={classes.wrapper}>{children()}</div>
 	</div>
 )
 
@@ -37,7 +36,7 @@ Layout.propTypes = {
 	children: PropTypes.func
 }
 
-export default Layout
+export default injectSheet(styles)(Layout)
 
 export const query = graphql`
 	query SiteMetadataQuery {
