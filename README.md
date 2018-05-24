@@ -10,6 +10,11 @@
 - [x] Manifest
 - [X] Sitemap
 - [ ] Subfont
+- [ ] Netlify CMS
+- [ ] Search
+- [ ] JSONLD, OpenGraph and Twitter tags
+- [ ] Analytics
+- [ ] Localization
 
 Demo: https://wise-starter.netlify.com
 
