@@ -19,6 +19,10 @@
 - [ ] Analytics
 - [ ] Localization
 
+Development `yarn dev`
+
+Build `yarn build`
+
 Demo: https://wise-starter.netlify.com
 
 # Deploy
