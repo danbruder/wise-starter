@@ -33,6 +33,14 @@ const styles = {
 		composes: '$input',
 		height: '10rem',
 		resize: 'vertical'
+	},
+	consent: {
+		padding: '1.45rem 1.0875rem',
+		paddingBottom: 0
+	},
+	forget: {
+		padding: '1.45rem 1.0875rem',
+		paddingTop: 0
 	}
 }
 

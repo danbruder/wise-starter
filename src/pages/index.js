@@ -18,7 +18,13 @@ const IndexPage = ({ transition }) => (
 				<Link to="/contact">Contact</Link>
 			</li>
 			<li>
+				<Link to="/obliviate">Obliviate</Link>
+			</li>
+			<li>
 				<Link to="/thanks">Thanks</Link>
+			</li>
+			<li>
+				<Link to="/legal">Legal</Link>
 			</li>
 		</ul>
 	</div>

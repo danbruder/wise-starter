@@ -10,6 +10,8 @@
 - [x] Favicon
 - [x] Manifest
 - [X] Sitemap
+- [X] Markdown, custom template, autolink headers
+- [X] Legal: Informations, Terms, Privacy, GDPR
 - [ ] Subfont
 - [ ] Netlify CMS
 - [ ] Search

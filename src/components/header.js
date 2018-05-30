@@ -15,7 +15,7 @@ const Header = ({ siteTitle, className }) => (
 )
 
 Header.propTypes = {
-	siteTitle: PropTypes.string,
+	siteTitle: PropTypes.string.isRequired,
 	className: PropTypes.string
 }
 

@@ -16,10 +16,10 @@ const Form = ({ action, className, name, children }) => (
 )
 
 Form.propTypes = {
-	action: PropTypes.string,
-	name: PropTypes.string,
+	action: PropTypes.string.isRequired,
+	name: PropTypes.string.isRequired,
 	className: PropTypes.string,
-	children: PropTypes.array
+	children: PropTypes.array.isRequired
 }
 
 export default Form

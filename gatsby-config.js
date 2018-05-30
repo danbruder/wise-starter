@@ -7,6 +7,19 @@ module.exports = {
 		siteUrl: 'https://wise-starter.netlify.com'
 	},
 	plugins: [
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'pages',
+				path: `${__dirname}/src/`
+			}
+		},
+		{
+			resolve: 'gatsby-transformer-remark',
+			options: {
+				plugins: ['gatsby-remark-autolink-headers']
+			}
+		},
 		'gatsby-plugin-react-helmet',
 		{
 			resolve: 'gatsby-plugin-typography',
