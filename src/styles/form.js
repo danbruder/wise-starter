@@ -1,3 +1,5 @@
+// TODO: Improve CSS
+
 import Theme from '../styles/theme.js'
 
 const styles = {

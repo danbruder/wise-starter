@@ -49,8 +49,8 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
-				name: 'WiseStarter',
-				short_name: 'WiseStarter',
+				name: 'Wise Starter',
+				short_name: 'WS',
 				start_url: '/',
 				background_color: '#0E283F',
 				theme_color: '#582644',
