@@ -6,7 +6,7 @@ import Form from '../components/form'
 
 import styles from '../styles/form'
 
-const ContactPage = ({ classes, transition }: Props) => (
+const ContactPage = ({ classes, transition }) => (
 	<div style={transition && transition.style}>
 		<Helmet title="Contact" />
 		<h1

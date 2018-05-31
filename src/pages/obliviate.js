@@ -6,7 +6,7 @@ import Form from '../components/form'
 
 import styles from '../styles/form'
 
-const ObliviatePage = ({ classes, transition }: Props) => (
+const ObliviatePage = ({ classes, transition }) => (
 	<div style={transition && transition.style}>
 		<Helmet title="Obliviate" />
 		<h1

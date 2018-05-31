@@ -12,6 +12,7 @@
 - [X] Sitemap
 - [X] Markdown, custom template, autolink headers
 - [X] Legal: Informations, Terms, Privacy, GDPR
+- [ ] SmoothScroll
 - [ ] Subfont
 - [ ] Netlify CMS
 - [ ] Search
