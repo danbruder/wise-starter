@@ -24,13 +24,12 @@
 		"gatsby-transformer-remark": "^1.7.41",
 		"react-helmet": "^5.2.0",
 		"react-transition-group": "^2.3.1",
-		"subfont": "^3.3.0",
 		"typography-breakpoint-constants": "^0.15.10"
 	},
 	"scripts": {
 		"dev": "gatsby develop",
 		"test": "echo \"Warn: no test specified\" && exit 0",
-		"build": "gatsby build && subfont public -i"
+		"build": "gatsby build"
 	},
 	"homepage": "https://github.com/TomPichaud/wise-starter"
 }
