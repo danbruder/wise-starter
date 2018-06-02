@@ -13,7 +13,7 @@
 - [X] Markdown, custom template, autolink headers
 - [X] Legal: Informations, Terms, Privacy, GDPR
 - [ ] SmoothScroll
-- [ ] Subfont
+- [X] Subfont
 - [ ] Netlify CMS
 - [ ] Search
 - [ ] JSONLD, OpenGraph and Twitter tags
