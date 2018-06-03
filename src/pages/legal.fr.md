@@ -2,6 +2,7 @@
 path: '/legal'
 template: 'page'
 title: 'Legal'
+langKey: 'fr'
 ---
 # Legal Informations
 

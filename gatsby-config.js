@@ -4,7 +4,9 @@ module.exports = {
 		author: 'Tom Pichaud',
 		description: 'Starter for Gatsby on netlify.',
 		lang: 'en',
-		siteUrl: 'https://wise-starter.netlify.com'
+		siteUrl: 'https://wise-starter.netlify.com',
+		langs: ['en', 'fr'],
+		defaultLangKey: 'en'
 	},
 	plugins: [
 		{
