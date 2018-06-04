@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import injectSheet from 'react-jss'
 
 import T from 'i18n-react'
-var dictionary = require('../locales/EN.yml')
+var dictionary = require('../locales/FR.yml')
 
 import Header from '../components/header'
 
@@ -44,7 +44,7 @@ Layout.propTypes = {
 export default injectSheet(styles)(Layout)
 
 export const query = graphql`
-	query SiteMetadataQuery {
+	query SiteMetadataQueryFR {
 		site {
 			siteMetadata {
 				title

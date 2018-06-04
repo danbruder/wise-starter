@@ -14,6 +14,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 			allMarkdownRemark {
 				edges {
 					node {
+						fileAbsolutePath
 						frontmatter {
 							template
 							path
@@ -35,15 +36,16 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 					component: path.resolve(
 						`src/templates/${String(node.frontmatter.template)}.js`
 					),
-					context: {}
+					context: { aPath: node.fileAbsolutePath }
 				})
 			} else {
 				createPage({
 					path: '/' + node.frontmatter.langKey + node.frontmatter.path,
+					layout: node.frontmatter.langKey,
 					component: path.resolve(
 						`src/templates/${String(node.frontmatter.template)}.js`
 					),
-					context: {}
+					context: { aPath: node.fileAbsolutePath }
 				})
 			}
 		})
@@ -55,14 +57,16 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
 
 	const langs = languages.keys
 
-	if (!langs.includes(page.path.split('/')[0])) {
-		return new Promise(resolve => {
-			const newPage = Object.assign({}, page)
+	return new Promise(resolve => {
+		if (!langs.includes(page.path.split('/')[0])) {
 			langs.map(lang => {
+				const newPage = Object.assign({}, page)
 				newPage.path = '/' + lang + page.path
+				newPage.layout = lang
+				console.log(newPage)
 				createPage(newPage)
 			})
-			resolve()
-		})
-	}
+		}
+		resolve()
+	})
 }
