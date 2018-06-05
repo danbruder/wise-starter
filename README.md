@@ -10,7 +10,7 @@
 - [x] Favicon
 - [x] Manifest
 - [X] Sitemap
-- [X] Markdown, custom template, autolink headers
+- [X] Markdown, custom template, autolink headers, i18n
 - [X] Legal: Informations, Terms, Privacy, GDPR
 - [ ] SmoothScroll
 - [ ] Subfont for Google Fonts
@@ -18,14 +18,14 @@
 - [ ] Search
 - [ ] JSONLD, OpenGraph and Twitter tags
 - [ ] Analytics
-- [ ] Localization
-
-Development `yarn dev`
-
-Build `yarn build`
+- [X] Localization ['i18n-react'](https://github.com/alexdrel/i18n-react) and custom Link component
 
 Demo: https://wise-starter.netlify.com
 
 # Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TomPichaud/wise-starter)
+
+# Thinking Lab
+
+Tailwind CSS with Emotion ?

@@ -8,7 +8,6 @@ const languages = require('./src/locales/languages')
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
 	const { createPage } = boundActionCreators
-
 	return graphql(`
 		{
 			allMarkdownRemark {
@@ -28,7 +27,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 		if (result.errors) {
 			return Promise.reject(result.errors)
 		}
-
 		result.data.allMarkdownRemark.edges.forEach(({ node }) => {
 			if (node.frontmatter.langKey == languages.defaultKey) {
 				createPage({
@@ -54,16 +52,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
 exports.onCreatePage = ({ page, boundActionCreators }) => {
 	const { createPage } = boundActionCreators
-
 	const langs = languages.keys
-
 	return new Promise(resolve => {
 		if (!langs.includes(page.path.split('/')[0])) {
 			langs.map(lang => {
 				const newPage = Object.assign({}, page)
 				newPage.path = '/' + lang + page.path
 				newPage.layout = lang
-				console.log(newPage)
 				createPage(newPage)
 			})
 		}

@@ -10,10 +10,9 @@ import Header from '../components/header'
 
 import styles from '../styles/layouts'
 
-const Layout = ({ classes, children, data }) => (
+const Layout = ({ classes, children, data, location }) => (
 	<div>
 		{T.setTexts(dictionary)}
-		{T.translate('hello')}
 		<Helmet
 			titleTemplate={`%s | ${data.site.siteMetadata.title}`}
 			defaultTitle={data.site.siteMetadata.title}
@@ -31,6 +30,7 @@ const Layout = ({ classes, children, data }) => (
 		/>
 		<Header
 			siteTitle={data.site.siteMetadata.title}
+			location={location.pathname}
 			className={classes.header}
 		/>
 		<div className={classes.wrapper}>{children()}</div>
