@@ -41,10 +41,6 @@ Layout.propTypes = {
 	children: PropTypes.func
 }
 
-Layout.defaultProps = {
-	location: { pathname: '/' }
-}
-
 export default injectSheet(styles)(Layout)
 
 export const query = graphql`
