@@ -48,7 +48,7 @@ Layout.defaultProps = {
 export default injectSheet(styles)(Layout)
 
 export const query = graphql`
-	query SiteMetadataQuery {
+	query LayoutQuery {
 		site {
 			siteMetadata {
 				title

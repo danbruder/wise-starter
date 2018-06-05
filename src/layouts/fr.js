@@ -2,10 +2,19 @@ import React from 'react'
 
 var dictionary = require('../locales/FR.yml')
 
-import Template from './index'
+import Layout from './index'
 
-const Layout = ({ classes, children, data, location }) => <div />
+export default props => <Layout {...props} lang={dictionary} />
 
-Layout.propTypes = {
-	children: PropTypes.func
-}
+export const query = graphql`
+	query FRLayoutQuery {
+		site {
+			siteMetadata {
+				title
+				author
+				description
+				lang
+			}
+		}
+	}
+`
