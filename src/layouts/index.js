@@ -10,9 +10,9 @@ import Header from '../components/header'
 
 import styles from '../styles/layouts'
 
-const Layout = ({ classes, children, data, location }) => (
+const Layout = ({ classes, children, data, location, lang }) => (
 	<div>
-		{T.setTexts(dictionary)}
+		{lang ? T.setTexts(lang) : T.setTexts(dictionary)}
 		<Helmet
 			titleTemplate={`%s | ${data.site.siteMetadata.title}`}
 			defaultTitle={data.site.siteMetadata.title}
