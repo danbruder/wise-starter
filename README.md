@@ -30,3 +30,15 @@ Demo: https://wise-starter.netlify.com
 # Thinking Lab
 
 Tailwind CSS with Emotion ?
+
+# To Fix
+
+Helmet Lang
+
+# i18n System
+
+All .js pages are generated for all languages.
+All layouts and .md must be created for all languages to prevent errors.
+LangSelect and Link component are i18n smart.
+Default languages doesn't use the key in url.
+No error handling yet.

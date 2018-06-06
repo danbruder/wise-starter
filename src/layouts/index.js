@@ -4,11 +4,14 @@ import Helmet from 'react-helmet'
 import injectSheet from 'react-jss'
 
 import T from 'i18n-react'
-var dictionary = require('../locales/EN.yml')
 
 import Header from '../components/header'
+import LangSelect from '../components/langSelect'
 
 import styles from '../styles/layouts'
+
+var dictionary = require('../locales/EN.yml')
+const languages = require('../locales/languages')
 
 const Layout = ({ classes, children, data, location, lang }) => (
 	<div>
@@ -26,13 +29,11 @@ const Layout = ({ classes, children, data, location, lang }) => (
 					content: `${data.site.siteMetadata.description}`
 				}
 			]}
-			htmlAttributes={{ lang: `${data.site.siteMetadata.lang}` }}
+			htmlAttributes={{ lang: `${T.translate('key')}` }}
 		/>
-		<Header
-			siteTitle={data.site.siteMetadata.title}
-			location={location.pathname}
-			className={classes.header}
-		/>
+		<Header siteTitle={data.site.siteMetadata.title} className={classes.header}>
+			<LangSelect location={location.pathname} languages={languages} />
+		</Header>
 		<div className={classes.wrapper}>{children()}</div>
 	</div>
 )
@@ -50,7 +51,6 @@ export const query = graphql`
 				title
 				author
 				description
-				lang
 			}
 		}
 	}

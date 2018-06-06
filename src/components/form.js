@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Form = ({ action, className, name, children }) => (
+const Form = ({ action, name, className, children }) => (
 	<form
 		name="contact"
 		method="post"

@@ -3,10 +3,7 @@ module.exports = {
 		title: 'Wise Starter',
 		author: 'Tom Pichaud',
 		description: 'Starter for Gatsby on netlify.',
-		lang: 'en',
-		siteUrl: 'https://wise-starter.netlify.com',
-		langs: ['en', 'fr'],
-		defaultLangKey: 'en'
+		siteUrl: 'https://wise-starter.netlify.com'
 	},
 	plugins: [
 		{

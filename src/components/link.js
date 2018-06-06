@@ -13,6 +13,7 @@ const iLink = ({ langKey, to, activeClassName, className, children }) => (
 )
 
 Link.propTypes = {
+	langKey: PropTypes.string,
 	to: PropTypes.string.isRequired,
 	activeClassName: PropTypes.string,
 	className: PropTypes.string

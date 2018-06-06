@@ -2,11 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from '../components/link'
 import T from 'i18n-react'
-const languages = require('../locales/languages')
 
-function removeLangKey(location) {
-	for (var i = 0; i != languages.keys.length; i++) {
-		var substring = '/' + languages.keys[i]
+function removeLangKey(keys, location) {
+	for (var i = 0; i != keys.length; i++) {
+		var substring = '/' + keys[i]
 		if (location.includes(substring) == true) {
 			return location.replace(substring, '')
 			break
@@ -16,12 +15,12 @@ function removeLangKey(location) {
 	}
 }
 
-function LangKeys(langs, location) {
-	return langs.map((lang, index) => (
+function LangKeys(keys, location) {
+	return keys.map((lang, index) => (
 		<li key={index}>
 			<Link
 				langKey={lang}
-				to={removeLangKey(location)}
+				to={removeLangKey(keys, location)}
 				activeClassName="active"
 				className="a">
 				{lang}
@@ -30,10 +29,13 @@ function LangKeys(langs, location) {
 	))
 }
 
-const LangSelect = ({ location }) => (
+const LangSelect = ({ languages, location }) => (
 	<ul>
 		<li>
-			<Link to={removeLangKey(location)} activeClassName="active" className="a">
+			<Link
+				to={removeLangKey(languages.keys, location)}
+				activeClassName="active"
+				className="a">
 				{languages.defaultKey}
 			</Link>
 		</li>
@@ -42,6 +44,7 @@ const LangSelect = ({ location }) => (
 )
 
 LangSelect.propTypes = {
+	languages: PropTypes.object.isRequired,
 	location: PropTypes.string.isRequired
 }
 
