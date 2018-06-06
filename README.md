@@ -34,6 +34,7 @@ Tailwind CSS with Emotion ?
 # To Fix
 
 - [ ] Error handling: i18n system
+- [ ] Update to Gatsby V2
 
 # i18n System
 
