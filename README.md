@@ -12,7 +12,7 @@
 - [X] Sitemap
 - [X] Markdown: template, autolink headers, i18n
 - [X] Legal: Informations, Terms, Privacy, GDPR
-- [X] Localization ['i18n-react'](https://github.com/alexdrel/i18n-react) and custom Link component
+- [X] Localization ['i18n-react'](https://github.com/alexdrel/i18n-react), SEO friendly, custom Link component
 - [ ] SmoothScroll
 - [ ] Subfont for Google Fonts
 - [ ] Netlify CMS
@@ -40,4 +40,4 @@ Tailwind CSS with Emotion ?
 All .js pages are generated for all languages.
 All layouts and .md must be created for all languages to prevent errors.
 LangSelect and Link component are i18n smart.
-Default languages doesn't use the key in url.
+SEO friendly and Default languages doesn't use the key in url.
