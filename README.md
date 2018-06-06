@@ -37,7 +37,7 @@ Tailwind CSS with Emotion ?
 
 # i18n System
 
+Live reload, SEO friendly and Default languages doesn't use the key in url.
 All .js pages are generated for all languages.
 All layouts and .md must be created for all languages to prevent errors.
 LangSelect and Link component are i18n smart.
-SEO friendly and Default languages doesn't use the key in url.
