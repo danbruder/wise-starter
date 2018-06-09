@@ -9,28 +9,37 @@
 		"url": "https://github.com/TomPichaud/wise-starter/issues"
 	},
 	"dependencies": {
-		"gatsby": "^1.9.267",
-		"gatsby-link": "^1.6.40",
-		"gatsby-plugin-favicon": "^2.1.1",
-		"gatsby-plugin-jss": "^1.5.14",
-		"gatsby-plugin-manifest": "^1.0.22",
-		"gatsby-plugin-offline": "^1.0.16",
-		"gatsby-plugin-react-helmet": "^2.0.10",
-		"gatsby-plugin-sass": "^1.0.26",
-		"gatsby-plugin-sitemap": "^1.2.23",
-		"gatsby-plugin-typography": "^1.7.18",
-		"gatsby-remark-autolink-headers": "^1.4.18",
-		"gatsby-source-filesystem": "^1.5.36",
-		"gatsby-transformer-remark": "^1.7.41",
+		"babel-plugin-tailwind": "^0.1.10",
+		"emotion": "^9.2.1",
+		"emotion-server": "^9.2.1",
+		"gatsby": "next",
+		"gatsby-plugin-emotion": "next",
+		"gatsby-plugin-netlify": "next",
+		"gatsby-plugin-manifest": "next",
+		"gatsby-plugin-offline": "next",
+		"gatsby-plugin-react-helmet": "next",
+		"gatsby-plugin-sitemap": "next",
+		"gatsby-remark-autolink-headers": "next",
+		"gatsby-source-filesystem": "next",
+		"gatsby-transformer-remark": "next",
 		"i18n-react": "^0.6.4",
+		"postcss": "^6.0.22",
+		"postcss-cli": "^5.0.0",
+		"react": "^16.4.0",
+		"react-dom": "^16.4.0",
+		"react-emotion": "^9.2.1",
 		"react-helmet": "^5.2.0",
-		"react-transition-group": "^2.3.1",
-		"typography-breakpoint-constants": "^0.15.10"
+		"tailwindcss": "^0.5.3"
 	},
 	"scripts": {
-		"dev": "gatsby develop",
+		"develop": "gatsby develop",
 		"test": "echo \"Warn: no test specified\" && exit 0",
-		"build": "gatsby build"
+		"build": "gatsby build",
+		"serve": "gatsby serve",
+		"predevelop":
+			"postcss ./src/styles/tailwind.css -o ./src/styles/tailwind.custom.css",
+		"prebuild":
+			"postcss ./src/styles/tailwind.css -o ./src/styles/tailwind.custom.css"
 	},
 	"homepage": "https://github.com/TomPichaud/wise-starter"
 }

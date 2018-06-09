@@ -10,7 +10,7 @@ langKey: 'en'
 
 **Company:** Wis Starter company | Capital of 1.000€
 
-**Address:** France
+**Address:** UK
 
 **Email:** contact@email.me
 

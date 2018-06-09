@@ -2,12 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-const iLink = ({ langKey, to, activeClassName, className, children }) => (
+const iLink = ({ langKey, to, activeClassName, children }) => (
 	<Link
 		exact
 		to={langKey ? '/' + langKey + to : to}
-		activeClassName={activeClassName}
-		className={className}>
+		activeClassName={activeClassName}>
 		{children}
 	</Link>
 )
@@ -15,8 +14,7 @@ const iLink = ({ langKey, to, activeClassName, className, children }) => (
 Link.propTypes = {
 	langKey: PropTypes.string,
 	to: PropTypes.string.isRequired,
-	activeClassName: PropTypes.string,
-	className: PropTypes.string
+	activeClassName: PropTypes.string
 }
 
 export default iLink

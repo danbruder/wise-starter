@@ -1,14 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Form = ({ action, name, className, children }) => (
+const Form = ({ action, name, children }) => (
 	<form
 		name="contact"
 		method="post"
 		data-netlify="true"
 		data-netlify-honeypot="turing-test"
-		action={action}
-		className={className}>
+		action={action}>
 		<input type="hidden" name="form-name" value={name} />
 		<input type="hidden" name="turing-test" />
 		{children}
@@ -17,9 +16,7 @@ const Form = ({ action, name, className, children }) => (
 
 Form.propTypes = {
 	action: PropTypes.string.isRequired,
-	name: PropTypes.string.isRequired,
-	className: PropTypes.string,
-	children: PropTypes.array.isRequired
+	name: PropTypes.string.isRequired
 }
 
 export default Form

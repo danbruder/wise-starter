@@ -1,14 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from '../components/link'
-import T from 'i18n-react'
 
 function removeLangKey(keys, location) {
-	for (var i = 0; i != keys.length; i++) {
+	for (var i = 0; i !== keys.length; i++) {
 		var substring = '/' + keys[i]
-		if (location.includes(substring) == true) {
+		if (location.includes(substring) === true) {
 			return location.replace(substring, '')
-			break
 		} else {
 			return location
 		}

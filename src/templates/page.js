@@ -1,23 +1,9 @@
 import React from 'react'
 
-export default function Template({ data, transition }) {
-	const { markdownRemark } = data
-	const { frontmatter, html } = markdownRemark
-	return (
-		<div style={transition && transition.style}>
-			<div dangerouslySetInnerHTML={{ __html: html }} />
-		</div>
-	)
-}
+import Layout from '../components/layout'
 
-export const pageQuery = graphql`
-	query PageByPath($aPath: String!) {
-		markdownRemark(fileAbsolutePath: { eq: $aPath }) {
-			html
-			frontmatter {
-				path
-				title
-			}
-		}
-	}
-`
+export default ({ pageContext: { html, lang }, location }) => (
+	<Layout location={location.pathname} lang={lang}>
+		<div dangerouslySetInnerHTML={{ __html: html }} />
+	</Layout>
+)

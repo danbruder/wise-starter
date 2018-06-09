@@ -4,16 +4,21 @@
  **/
 
 const path = require('path')
+
 const languages = require('./src/locales/languages')
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-	const { createPage } = boundActionCreators
+exports.onCreateBabelConfig = ({ actions: { setBabelPlugin } }) => {
+	setBabelPlugin({ name: 'babel-plugin-tailwind' })
+}
+
+exports.createPages = ({ actions, graphql }) => {
+	const { createPage } = actions
 	return graphql(`
 		{
 			allMarkdownRemark {
 				edges {
 					node {
-						fileAbsolutePath
+						html
 						frontmatter {
 							template
 							path
@@ -28,37 +33,55 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 			return Promise.reject(result.errors)
 		}
 		result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-			if (node.frontmatter.langKey == languages.defaultKey) {
+			if (node.frontmatter.langKey === languages.default.key) {
 				createPage({
 					path: node.frontmatter.path,
 					component: path.resolve(
 						`src/templates/${String(node.frontmatter.template)}.js`
 					),
-					context: { aPath: node.fileAbsolutePath }
+					context: {
+						html: node.html,
+						lang: languages.default.value
+					}
 				})
 			} else {
 				createPage({
 					path: '/' + node.frontmatter.langKey + node.frontmatter.path,
-					layout: node.frontmatter.langKey,
 					component: path.resolve(
 						`src/templates/${String(node.frontmatter.template)}.js`
 					),
-					context: { aPath: node.fileAbsolutePath }
+					context: {
+						html: node.html,
+						lang: languages.keys[node.frontmatter.langKey]
+					}
 				})
 			}
 		})
 	})
 }
 
-exports.onCreatePage = ({ page, boundActionCreators }) => {
-	const { createPage } = boundActionCreators
-	const langs = languages.keys
+exports.onCreatePage = ({ page, actions }) => {
+	const { createPage, deletePage } = actions
 	return new Promise(resolve => {
-		if (!langs.includes(page.path.split('/')[0])) {
-			langs.map(lang => {
+		const oldPage = Object.assign({}, page)
+		page.context = {
+			lang: languages.default.value
+		}
+		deletePage(oldPage)
+		createPage(page)
+		var shouldGenerate = true
+		Object.entries(languages.keys).map(([key, value]) => {
+			if (key == page.path.split('/')[0]) {
+				shouldGenerate = false
+			}
+		})
+		if (shouldGenerate) {
+			Object.entries(languages.keys).map(([key, value]) => {
 				const newPage = Object.assign({}, page)
-				newPage.path = '/' + lang + page.path
-				newPage.layout = lang
+				newPage.path = '/' + key + page.path
+				newPage.context = {
+					lang: value
+				}
 				createPage(newPage)
 			})
 		}

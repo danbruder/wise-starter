@@ -2,23 +2,21 @@
 [![Build Status](https://travis-ci.org/TomPichaud/wise-starter.svg?branch=master)](https://travis-ci.org/TomPichaud/wise-starter)
 
 - [x] Helmet
-- [x] Page Transitions
-- [x] Netlify’s Form component
-- [x] Theme with Typography.js
-- [x] JSS
-- [X] Offline
-- [x] Favicon
-- [x] Manifest
-- [X] Sitemap
-- [X] Markdown: template, autolink headers, i18n
-- [X] Legal: Informations, Terms, Privacy, GDPR
-- [X] Localization ['i18n-react'](https://github.com/alexdrel/i18n-react), SEO friendly, custom Link component
+- [x] Netlify : Form component
+- [x] Tailwind CSS with Emotion
+- [x] Offline
+- [x] Sitemap, Manifest, Favicon, Safari Tab, MSApplication
+- [x] Markdown: template, link headers, i18n
+- [x] Localization ['i18n-react'](https://github.com/alexdrel/i18n-react), SEO friendly, custom Link component
+- [x] Legal: Informations, Terms, Privacy, GDPR
+- [ ] Page Transitions
 - [ ] SmoothScroll
 - [ ] Subfont for Google Fonts
 - [ ] Netlify CMS
 - [ ] Search Engine
 - [ ] JSONLD, OpenGraph and Twitter tags
-- [ ] Analytics
+- [ ] Fathom Analytics
+
 
 
 Demo: https://wise-starter.netlify.com
@@ -29,16 +27,4 @@ Demo: https://wise-starter.netlify.com
 
 # Thinking Lab
 
-Tailwind CSS with Emotion ?
-
 # To Fix
-
-- [ ] Error handling: i18n system
-- [ ] Update to Gatsby V2
-
-# i18n System
-
-Live reload, SEO friendly and Default languages doesn't use the key in url.
-All .js pages are generated for all languages.
-All layouts and .md must be created for all languages to prevent errors.
-LangSelect and Link component are i18n smart.

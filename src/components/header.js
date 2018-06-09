@@ -3,26 +3,19 @@ import PropTypes from 'prop-types'
 import Link from '../components/link'
 import T from 'i18n-react'
 
-const Header = ({ siteTitle, className, children }) => (
-	<header className={className}>
-		<div className="div">
-			<h1 className="h1">
-				<Link
-					langKey={T.translate('key')}
-					to="/"
-					activeClassName="active"
-					className="a">
-					{siteTitle}
-				</Link>
-			</h1>
-			{children}
-		</div>
+const Header = ({ siteTitle, children }) => (
+	<header>
+		<h1>
+			<Link langKey={T.translate('prefix')} to="/" activeClassName="active">
+				{siteTitle}
+			</Link>
+		</h1>
+		{children}
 	</header>
 )
 
 Header.propTypes = {
-	siteTitle: PropTypes.string.isRequired,
-	className: PropTypes.string
+	siteTitle: PropTypes.string.isRequired
 }
 
 export default Header

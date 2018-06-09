@@ -10,7 +10,7 @@ module.exports = {
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'pages',
-				path: `${__dirname}/src/`
+				path: `${__dirname}/src/pages/`
 			}
 		},
 		{
@@ -20,36 +20,12 @@ module.exports = {
 			}
 		},
 		'gatsby-plugin-react-helmet',
-		{
-			resolve: 'gatsby-plugin-typography',
-			options: {
-				pathToConfigModule: `src/utils/typography.js`
-			}
-		},
-		'gatsby-plugin-jss',
-		{
-			resolve: 'gatsby-plugin-favicon',
-			options: {
-				logo: './src/assets/icon.png',
-				injectHTML: true,
-				icons: {
-					android: true,
-					appleIcon: true,
-					appleStartup: true,
-					coast: false,
-					favicons: true,
-					firefox: true,
-					twitter: false,
-					yandex: false,
-					windows: false
-				}
-			}
-		},
+		'gatsby-plugin-emotion',
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
 				name: 'Wise Starter',
-				short_name: 'WS',
+				short_name: 'Wise Starter',
 				start_url: '/',
 				background_color: '#0E283F',
 				theme_color: '#582644',
@@ -58,6 +34,7 @@ module.exports = {
 			}
 		},
 		'gatsby-plugin-sitemap',
-		'gatsby-plugin-offline'
+		'gatsby-plugin-offline',
+		'gatsby-plugin-netlify'
 	]
 }
