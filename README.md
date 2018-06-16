@@ -33,5 +33,6 @@ Demo: https://wise-starter.netlify.com
 # Subfont
 
 `yarn add subfont`
+
 package.json
 `"build": "gatsby build && subfont public -i"`
