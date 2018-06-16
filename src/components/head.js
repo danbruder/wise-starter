@@ -1,4 +1,4 @@
-// TODO: Add og:locale:alternate og:video og:audio article music video book profile og:type-content="my_namespace:my_type"
+// TODO: Add ogp image arrays, og:locale:alternate og:video og:audio article music video book profile
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
@@ -70,18 +70,16 @@ const Head = ({ seo, path }) => (
 						property="og:title"
 						content={seo && seo.title ? seo.title : o.title}
 					/>
-					{seo && seo.post ? (
-						<meta property="og:type" content="article" />
-					) : null}
+					<meta
+						property="og:type"
+						content={seo && seo.type ? seo.type : 'website'}
+					/>
 					<meta
 						property="og:description"
 						content={seo && seo.description ? seo.description : o.description}
 					/>
 					<meta property="og:url" content={o.siteUrl + path} />
-					<meta
-						property="og:image"
-						content={o.siteUrl + '/apple-touch-icon.png'}
-					/>
+					<meta property="og:image" content={o.siteUrl + '/ogp.png'} />
 				</Helmet>
 			)
 		}}
