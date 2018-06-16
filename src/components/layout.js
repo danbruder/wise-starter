@@ -10,7 +10,7 @@ import Lang from './lang'
 
 injectGlobal`
   body { ${tw('m-0 font-sans font-light text-blue-darkest')} }
-	a { ${tw('no-underline text-blue-dark')} }
+	a { ${tw('no-underline text-blue-darker')} }
 	h1, h2 { ${tw('my-4 mx-0 font-light')} }
 `
 const Container = styled('div')`
