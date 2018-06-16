@@ -18,7 +18,10 @@ export default class Contact extends React.Component {
 
 	render() {
 		return (
-			<select onChange={this.handleChange} value={this.state.value}>
+			<select
+				onChange={this.handleChange}
+				value={this.state.value}
+			aria-label="Language">
 				{Object.entries(this.props.keys).map(([key, value]) => (
 					<option key={key} value={value.prefix}>
 						{value.name}
