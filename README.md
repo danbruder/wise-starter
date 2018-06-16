@@ -24,6 +24,8 @@ Demo: https://wise-starter.netlify.com
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TomPichaud/wise-starter)
 
+Build command : `yarn build`
+
 # Thinking Lab
 
 # To Fix
