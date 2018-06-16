@@ -11,7 +11,6 @@
 - [x] Legal: Informations, Terms, Privacy, GDPR
 - [ ] Page Transitions
 - [ ] SmoothScroll
-- [ ] Subfont
 - [ ] Netlify CMS
 - [ ] Search Engine
 - [inProgress] OpenGraph and Twitter <meta>
@@ -28,3 +27,11 @@ Demo: https://wise-starter.netlify.com
 # Thinking Lab
 
 # To Fix
+
+- [ ] Anchor Link not scrolling : [issue 5314](https://github.com/gatsbyjs/gatsby/issues/5314)
+
+# Subfont
+
+`yarn add subfont`
+package.json
+`"build": "gatsby build && subfont public -i"`
