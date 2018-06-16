@@ -1,5 +1,5 @@
 module.exports = {
-	key: 'en',
+	key: 'en_GB',
 	prefix: '',
 	hello: 'Hello !'
 }

@@ -11,10 +11,10 @@
 - [x] Legal: Informations, Terms, Privacy, GDPR
 - [ ] Page Transitions
 - [ ] SmoothScroll
-- [ ] Subfont for Google Fonts
+- [ ] Subfont
 - [ ] Netlify CMS
 - [ ] Search Engine
-- [ ] JSONLD, OpenGraph and Twitter tags
+- [inProgress] OpenGraph and Twitter <meta>
 - [ ] Fathom Analytics
 
 

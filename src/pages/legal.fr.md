@@ -8,7 +8,7 @@ langKey: 'fr'
 
 **Name:** Tom Pichaud
 
-**Company:** Wis Starter company | Capital of 1.000€
+**Company:** Wise Starter company | Capital of 1.000€
 
 **Address:** France
 

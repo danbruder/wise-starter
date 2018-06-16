@@ -1,5 +1,5 @@
 module.exports = {
-	key: 'fr',
-	prefix: 'fr',
+	key: 'fr_FR',
+	prefix: '/fr',
 	hello: 'Salut !'
 }

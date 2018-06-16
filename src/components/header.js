@@ -1,17 +1,26 @@
+/* global tw */
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'react-emotion'
+
 import Link from '../components/link'
-import T from 'i18n-react'
+
+const Container = styled('header')`
+	${tw('p-4 container bg-blue-dark')};
+`
+const HomeLink = styled(Link)`
+	${tw('font-light text-blue-lightest')};
+`
 
 const Header = ({ siteTitle, children }) => (
-	<header>
+	<Container>
 		<h1>
-			<Link langKey={T.translate('prefix')} to="/" activeClassName="active">
+			<HomeLink to="/" activeClassName="active">
 				{siteTitle}
-			</Link>
+			</HomeLink>
 		</h1>
 		{children}
-	</header>
+	</Container>
 )
 
 Header.propTypes = {

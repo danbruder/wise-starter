@@ -1,76 +1,27 @@
+/* global tw */
 import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery } from 'gatsby'
+import styled from 'react-emotion'
+import { injectGlobal } from 'emotion'
 
-import T from 'i18n-react'
-
+import Head from './head'
 import Header from './header'
 
-import LangSelect from './langSelect'
+injectGlobal`
+  body { ${tw('m-0 font-sans font-light text-blue-darkest')} }
+	a { ${tw('no-underline text-blue-dark')} }
+	h1, h2 { ${tw('my-4 mx-0 font-light')} }
+`
+const Container = styled('div')`
+	${tw('flex flex-col bg-blue-lightest min-h-screen')};
+`
+const Wrapper = styled('div')`
+	${tw('p-4 container')};
+`
 
-import languages from '../locales/languages'
-
-import AppleTouchIcon from '../../static/apple-touch-icon.png'
-import Favicon16 from '../../static/favicon-16x16.png'
-import Favicon32 from '../../static/favicon-32x32.png'
-import SafariPinnedTab from '../../static/safari-pinned-tab.svg'
-
-export default ({ children, location }) => (
-	<StaticQuery
-		query={graphql`
-			query LayoutQuery {
-				site {
-					siteMetadata {
-						title
-						author
-						description
-					}
-				}
-			}
-		`}
-		render={data => (
-			<>
-				<Helmet
-					titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-					defaultTitle={data.site.siteMetadata.title}
-					meta={[
-						{
-							name: 'author',
-							content: `${data.site.siteMetadata.author}`
-						},
-						{
-							name: 'description',
-							content: `${data.site.siteMetadata.description}`
-						}
-					]}
-					htmlAttributes={{ lang: `${T.translate('key')}` }}
-					link={[
-						{
-							rel: 'apple-touch-icon',
-							sizes: '180x180',
-							href: `${AppleTouchIcon}`
-						},
-						{
-							rel: 'icon',
-							sizes: '32x32',
-							type: 'image/png',
-							href: `${Favicon32}`
-						},
-						{
-							rel: 'icon',
-							sizes: '16x16',
-							type: 'image/png',
-							href: `${Favicon16}`
-						},
-						{ rel: 'mask-icon', color: '#663399', href: `${SafariPinnedTab}` }
-					]}
-				/>
-				<Header siteTitle={data.site.siteMetadata.title} />
-				<div>{children}</div>
-			</>
-		)}
-	/>
+export default ({ children, location, seo }) => (
+	<Container>
+		<Head seo={seo} path={location} />
+		<Header siteTitle="Wise Starter" />
+		<Wrapper>{children}</Wrapper>
+	</Container>
 )
-
-/* <LangSelect location={location} languages={languages} /> */
