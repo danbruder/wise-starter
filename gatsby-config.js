@@ -33,7 +33,7 @@ module.exports = {
 				background_color: '#0E283F',
 				theme_color: '#582644',
 				display: 'minimal-ui',
-				icon: 'src/assets/icon.png'
+				icon: 'static/icon.png'
 			}
 		},
 		'gatsby-plugin-sitemap',
