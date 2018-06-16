@@ -1,6 +1,6 @@
-var dictFR = require('./FR')
-var dictEN = require('./EN')
+var dFR = require('./FR')
+var dEN = require('./EN')
 
 module.exports = {
-	keys: { en: dictEN, fr: dictFR }
+	keys: { en: dEN, fr: dFR }
 }

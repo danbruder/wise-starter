@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import Form from '../components/form'
 
 const ObliviatePage = ({ pageContext: { lang }, location }) => (
-	<Layout location={location.pathname}>
+	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
 		<div>
 			<Helmet title="Obliviate" />

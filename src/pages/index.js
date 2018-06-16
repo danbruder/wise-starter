@@ -1,15 +1,18 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import T from 'i18n-react'
+
 import Layout from '../components/layout'
 import Link from '../components/link'
 
 const seo = {
-	title: 'Index Page',
-	description: 'My Story'
+	title: 'Home Page',
+	description: 'That is a Wise Story'
 }
 
 const IndexPage = ({ pageContext: { lang }, location }) => (
-	<Layout location={location.pathname} seo={seo}>
+	<Layout path={location.pathname} seo={seo}>
+		<Helmet title="Home" />
 		{T.setTexts(lang)}
 		<h1>Hi people !</h1>
 		<p>{T.translate('hello')}</p>

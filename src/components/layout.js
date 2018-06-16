@@ -5,6 +5,8 @@ import { injectGlobal } from 'emotion'
 
 import Head from './head'
 import Header from './header'
+import languages from '../locales/languages'
+import Lang from './lang'
 
 injectGlobal`
   body { ${tw('m-0 font-sans font-light text-blue-darkest')} }
@@ -18,10 +20,12 @@ const Wrapper = styled('div')`
 	${tw('p-4 container')};
 `
 
-export default ({ children, location, seo }) => (
+export default ({ children, path, seo }) => (
 	<Container>
-		<Head seo={seo} path={location} />
-		<Header siteTitle="Wise Starter" />
+		<Head seo={seo} path={path} />
+		<Header siteTitle="Wise Starter">
+			<Lang keys={languages.keys} path={path} />
+		</Header>
 		<Wrapper>{children}</Wrapper>
 	</Container>
 )

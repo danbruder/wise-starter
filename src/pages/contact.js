@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 import Form from '../components/form'
 
 const ContactPage = ({ pageContext: { lang }, location }) => (
-	<Layout location={location.pathname}>
+	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
 		<div>
 			<Helmet title="Contact" />

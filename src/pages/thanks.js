@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 const ThanksPage = ({ pageContext: { lang }, location }) => (
-	<Layout location={location.pathname}>
+	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
 		<div>
 			<Helmet title="Thanks" />

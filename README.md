@@ -5,15 +5,16 @@
 - [x] Netlify : Form component
 - [x] Tailwind CSS with Emotion
 - [x] Offline
-- [x] Sitemap, Manifest, Favicon, Safari Tab, MSApplication
+- [x] Manifest, Favicon, Safari Pinned Tab, MSApplication, Sitemap
 - [x] Markdown: template, link headers, i18n
-- [x] Localization ['i18n-react'](https://github.com/alexdrel/i18n-react), SEO friendly, custom Link component
+- [x] Localization ['i18n-react'](https://github.com/alexdrel/i18n-react), SEO friendly, custom Link & Lang components
 - [x] Legal: Informations, Terms, Privacy, GDPR
+- [x] OpenGraph: FB, Twitter
 - [ ] Page Transitions
 - [ ] SmoothScroll
 - [ ] Netlify CMS
 - [ ] Search Engine
-- [inProgress] OpenGraph and Twitter <meta>
+
 - [ ] Fathom Analytics
 
 

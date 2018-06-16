@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 const SecondPage = ({ pageContext: { lang }, location }) => (
-	<Layout location={location.pathname}>
+	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
 		<div>
 			<Helmet title="Page 2" />
