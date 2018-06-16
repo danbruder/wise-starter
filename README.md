@@ -1,23 +1,17 @@
 # Wise starter for Gatsby on Netlify
 [![Build Status](https://travis-ci.org/TomPichaud/wise-starter.svg?branch=master)](https://travis-ci.org/TomPichaud/wise-starter)
 
-- [x] Helmet
 - [x] Netlify : Form component
-- [x] Tailwind CSS with Emotion
-- [x] Offline
-- [x] Manifest, Favicon, Safari Pinned Tab, MSApplication, Sitemap
-- [x] Markdown: template, link headers, i18n
-- [x] Localization ['i18n-react'](https://github.com/alexdrel/i18n-react), SEO friendly, custom Link & Lang components
+- [x] Emotion + Tailwind CSS
+- [x] Offline + Manifest + MSApplication
+- [x] SEO : OpenGraph (FB, Twitter) + Icons + Sitemap + i18n
+- [x] Markdown : Template + Link headers + i18n
+- [x] Internationalization ['i18n-react'](https://github.com/alexdrel/i18n-react) + Link & Lang components
 - [x] Legal: Informations, Terms, Privacy, GDPR
-- [x] OpenGraph: FB, Twitter
-- [ ] Page Transitions
-- [ ] SmoothScroll
+
 - [ ] Netlify CMS
 - [ ] Search Engine
-
 - [ ] Fathom Analytics
-
-
 
 Demo: https://wise-starter.netlify.com
 
@@ -25,9 +19,10 @@ Demo: https://wise-starter.netlify.com
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TomPichaud/wise-starter)
 
-Build command : `yarn build`
-
 # Thinking Lab
+
+- [ ] Page Transitions
+- [ ] SmoothScroll
 
 # To Fix
 
