@@ -1,6 +1,6 @@
 import React from 'react'
 import T from 'i18n-react'
-import { navigateTo } from 'gatsby'
+import { push } from 'gatsby'
 
 export default class Contact extends React.Component {
 	constructor(props) {
@@ -13,7 +13,7 @@ export default class Contact extends React.Component {
 
 	handleChange = e => {
 		this.setState({ value: e.target.value })
-		navigateTo(e.target.value + this.state.path)
+		push(e.target.value + this.state.path)
 	}
 
 	render() {
@@ -21,7 +21,7 @@ export default class Contact extends React.Component {
 			<select
 				onChange={this.handleChange}
 				value={this.state.value}
-			aria-label="Language">
+				aria-label="Language">
 				{Object.entries(this.props.keys).map(([key, value]) => (
 					<option key={key} value={value.prefix}>
 						{value.name}
