@@ -8,30 +8,28 @@ import Form from '../components/form'
 const ObliviatePage = ({ pageContext: { lang }, location }) => (
 	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
-		<div>
-			<Helmet title={T.translate('obliviate.title')} />
-			<h1>{T.translate('obliviate.header')}</h1>
-			<Form name="obliviate" action="/thanks">
-				<input
-					type="email"
-					name="email"
-					placeholder={T.translate('obliviate.placeholder.email')}
-					autoComplete="email"
-					required
-				/>
-				<button type="submit">{T.translate('obliviate.submit')}</button>
-				<T.span
-					text={{
-						key: 'obliviate.message',
-						var: (
-							<a href="/legal#privacy-policy" target="_blank">
-								{T.translate('obliviate.link')}
-							</a>
-						)
-					}}
-				/>
-			</Form>
-		</div>
+		<Helmet title={T.translate('obliviate.title')} />
+		<h1>{T.translate('obliviate.header')}</h1>
+		<Form name="obliviate" action="/thanks">
+			<input
+				type="email"
+				name="email"
+				placeholder={T.translate('obliviate.placeholder.email')}
+				autoComplete="email"
+				required
+			/>
+			<button type="submit">{T.translate('obliviate.submit')}</button>
+			<T.span
+				text={{
+					key: 'obliviate.message',
+					var: (
+						<a href="/legal#privacy-policy" target="_blank">
+							{T.translate('obliviate.link')}
+						</a>
+					)
+				}}
+			/>
+		</Form>
 	</Layout>
 )
 
