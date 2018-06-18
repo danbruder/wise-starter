@@ -20,9 +20,10 @@ exports.createPages = ({ actions, graphql }) => {
 					node {
 						html
 						frontmatter {
+							title
 							template
 							path
-							langKey
+							lang
 						}
 					}
 				}
@@ -35,14 +36,14 @@ exports.createPages = ({ actions, graphql }) => {
 		result.data.allMarkdownRemark.edges.forEach(({ node }) => {
 			createPage({
 				path:
-					languages.keys[node.frontmatter.langKey].prefix +
-					node.frontmatter.path,
+					languages.keys[node.frontmatter.lang].prefix + node.frontmatter.path,
 				component: path.resolve(
 					`src/templates/${String(node.frontmatter.template)}.js`
 				),
 				context: {
 					html: node.html,
-					lang: languages.keys[node.frontmatter.langKey]
+					lang: languages.keys[node.frontmatter.lang],
+					title: node.frontmatter.title
 				}
 			})
 		})

@@ -1,8 +1,8 @@
 ---
 path: '/legal'
 template: 'page'
-title: 'Legal'
-langKey: 'en'
+title: 'Legal Informations'
+lang: 'en'
 ---
 # Legal Informations
 

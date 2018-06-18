@@ -5,7 +5,7 @@ module.exports = {
 	home: {
 		title: 'Accueil',
 		header: 'Bienvenue',
-		welcome: 'Bienvenue sur votre nouveau',
+		welcome: 'Bienvenue sur votre nouveau {var} Gatsby site, sur Netlify',
 		message: 'Maintenant, allez construire quelque chose de génial.'
 	},
 	contact: {
@@ -44,8 +44,11 @@ module.exports = {
 		message: 'Votre formulaire a été envoyé.',
 		link: "Retour à la page d'accueil"
 	},
+	legal: {
+		title: 'Mentions Légales'
+	},
 	e404: {
-		title: '404',
+		title: 'Erreur 404',
 		header: 'Introuvable',
 		message:
 			"Vous venez de prendre un chemin qui n'existe pas... la tristesse!",

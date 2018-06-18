@@ -5,7 +5,7 @@ module.exports = {
 	home: {
 		title: 'Home',
 		header: 'Welcome',
-		welcome: 'Welcome to your new',
+		welcome: 'Welcome to your new {var} Gatsby site, on Netlify',
 		message: 'Now go build something great.'
 	},
 	contact: {
@@ -44,8 +44,11 @@ module.exports = {
 		message: 'Your form has been submitted.',
 		link: 'Go back to Home page'
 	},
+	legal: {
+		title: 'Legal Informations'
+	},
 	e404: {
-		title: '404',
+		title: 'Error 404',
 		header: 'Not Found',
 		message: "You just hit a route that doesn't exist... the sadness!",
 		link: 'Go back to Home page'
