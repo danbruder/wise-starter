@@ -9,10 +9,10 @@ const NotFoundPage = ({ pageContext: { lang }, location }) => (
 	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
 		<div>
-			<Helmet title="404" />
-			<h1>NOT FOUND</h1>
-			<p>You just hit a route that doesn&#39;t exist... the sadness!</p>
-			<Link to="/">Go back to the homepage</Link>
+			<Helmet title={T.translate('e404.title')} />
+			<h1>{T.translate('e404.header')}</h1>
+			<p>{T.translate('e404.message')}</p>
+			<Link to="/">{T.translate('e404.link')}</Link>
 		</div>
 	</Layout>
 )

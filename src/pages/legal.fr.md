@@ -87,4 +87,4 @@ This policy is effective as of 28 May 2018.
 
 | Source | Personal Data | Reason | Handling | Disposal | Consent |
 | --- | --- | --- | --- | --- |:---:|
-| Contact Form | Name & Email | Customer relationship management | Netlify database, Administrator only | Upon Request | ✓ |
+| Contact Form | Name & Email | User relationship management | Netlify database, Administrator only | Upon Request | ✓ |

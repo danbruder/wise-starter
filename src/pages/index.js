@@ -12,11 +12,11 @@ const seo = {
 
 const IndexPage = ({ pageContext: { lang }, location }) => (
 	<Layout path={location.pathname} seo={seo}>
-		<Helmet title="Home" />
+		<Helmet title={T.translate('home.title')} />
 		{T.setTexts(lang)}
-		<h1>{T.translate('Welcome')} !</h1>
+		<h1>{T.translate('home.header')} !</h1>
 		<p>
-			{T.translate('Welcome to your new')}{' '}
+			{T.translate('home.welcome')}{' '}
 			<a
 				href="https://github.com/TomPichaud/wise-starter"
 				target="_blank"
@@ -25,7 +25,7 @@ const IndexPage = ({ pageContext: { lang }, location }) => (
 			</a>{' '}
 			Gatsby site.
 		</p>
-		<p>{T.translate('Now go build something great')}.</p>
+		<p>{T.translate('home.message')}</p>
 		<h1>Go To</h1>
 		<ul>
 			<li>

@@ -10,57 +10,66 @@ const ContactPage = ({ pageContext: { lang }, location }) => (
 	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
 		<div>
-			<Helmet title="Contact" />
-			<h1
-				style={{
-					textAlign: 'center'
-				}}>
-				Contact
-			</h1>
+			<Helmet title={T.translate('contact.title')} />
+			<h1>{T.translate('contact.header')}</h1>
 			<Form name="contact" action="/thanks">
 				<input
 					type="text"
 					name="name"
-					placeholder="Name"
+					placeholder={T.translate('contact.placeholder.name')}
 					autoComplete="name"
 					required
 				/>
 				<input
 					type="email"
 					name="email"
-					placeholder="@ Mail"
+					placeholder={T.translate('contact.placeholder.email')}
 					autoComplete="email"
 					required
 				/>
-				<textarea name="message" placeholder="Message" required />
+				<textarea
+					name="message"
+					placeholder={T.translate('contact.placeholder.message')}
+					required
+				/>
 				<div>
 					<input
 						type="checkbox"
 						id="consent"
 						name="consent"
-						value="I consent to my data being stored in line with the Privacy Policy[]."
+						value={
+							'I consent to my data being stored in line with the Privacy Policy.' +
+							Date.now
+						}
 						required
-						style={{
-							marginRight: '0.5rem'
+					/>
+					<T.text
+						tag="label"
+						htmlFor="consent"
+						text={{
+							key: 'contact.consent.message',
+							var: (
+								<a href="/legal#privacy-policy" target="_blank">
+									{T.translate('contact.consent.link')}
+								</a>
+							)
 						}}
 					/>
-					<label htmlFor="consent">
-						I consent to my data being stored in line with the{' '}
-						<a href="/legal#privacy-policy" target="_blank">
-							Privacy Policy
-						</a>, as a means to communicate with Wise Starter.
-					</label>
 				</div>
-				<button type="submit">Send</button>
-				<span>
-					You can exercise your right of <Link to="/obliviate">Oblivion</Link>{' '}
-					at any time.
-				</span>
+				<button type="submit">{T.translate('contact.submit')}</button>
+				<T.span
+					text={{
+						key: 'contact.obliviate.message',
+						var: (
+							<Link to="/obliviate">
+								{T.translate('contact.obliviate.link')}
+							</Link>
+						)
+					}}
+				/>
 			</Form>
 		</div>
 	</Layout>
 )
 
 export default ContactPage
-
-// TODO: Target _blank for privacy policy

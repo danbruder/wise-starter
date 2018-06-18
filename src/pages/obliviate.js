@@ -9,29 +9,27 @@ const ObliviatePage = ({ pageContext: { lang }, location }) => (
 	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
 		<div>
-			<Helmet title="Obliviate" />
-			<h1
-				style={{
-					textAlign: 'center'
-				}}>
-				Obliviate
-			</h1>
+			<Helmet title={T.translate('obliviate.title')} />
+			<h1>{T.translate('obliviate.header')}</h1>
 			<Form name="obliviate" action="/thanks">
 				<input
 					type="email"
 					name="email"
-					placeholder="@ Mail"
+					placeholder={T.translate('obliviate.placeholder.email')}
 					autoComplete="email"
 					required
 				/>
-				<button type="submit">Forget Me</button>
-				<span>
-					You can exercise your right of oblivion in line with our{' '}
-					<a href="/legal#privacy-policy" target="_blank">
-						Privacy Policy
-					</a>, completing this form would trigger the deletion of all your
-					personal information from our database.
-				</span>
+				<button type="submit">{T.translate('obliviate.submit')}</button>
+				<T.span
+					text={{
+						key: 'obliviate.message',
+						var: (
+							<a href="/legal#privacy-policy" target="_blank">
+								{T.translate('obliviate.link')}
+							</a>
+						)
+					}}
+				/>
 			</Form>
 		</div>
 	</Layout>
