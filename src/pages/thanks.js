@@ -9,10 +9,10 @@ const ThanksPage = ({ pageContext: { lang }, location }) => (
 	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
 		<div>
-			<Helmet title="Thanks" />
-			<h1>Thanks</h1>
-			<p>Your form has been submitted.</p>
-			<Link to="/">Go back to the homepage</Link>
+			<Helmet title={T.translate('Thanks')} />
+			<h1>{T.translate('Thanks')}</h1>
+			<p>{T.translate('Your form has been submitted')}.</p>
+			<Link to="/">{T.translate('Go back to Home page')}</Link>
 		</div>
 	</Layout>
 )

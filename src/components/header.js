@@ -6,10 +6,12 @@ import styled from 'react-emotion'
 import Link from '../components/link'
 
 const Container = styled('header')`
-	${tw('p-4 container bg-blue-dark')};
+	${tw('p-4 flex flex-row items-center justify-between bg-blue-darkest')};
 `
 const HomeLink = styled(Link)`
-	${tw('font-light text-blue-lightest')};
+	${tw(
+		'pb-2 font-hairline text-blue-lightest hover:text-blue-lightest border-0 border-b border-solid border-blue-dark hover:border-blue'
+	)};
 `
 
 const Header = ({ siteTitle, children }) => (

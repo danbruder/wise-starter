@@ -14,18 +14,20 @@ const IndexPage = ({ pageContext: { lang }, location }) => (
 	<Layout path={location.pathname} seo={seo}>
 		<Helmet title="Home" />
 		{T.setTexts(lang)}
-		<h1>Hi people !</h1>
-		<p>{T.translate('hello')}</p>
-		<p>Welcome to your new Wise Gatsby site.</p>
-		<p>Now go build something great.</p>
+		<h1>{T.translate('Welcome')} !</h1>
+		<p>
+			{T.translate('Welcome to your new')}{' '}
+			<a
+				href="https://github.com/TomPichaud/wise-starter"
+				target="_blank"
+				rel="noopener noreferrer">
+				Wise
+			</a>{' '}
+			Gatsby site.
+		</p>
+		<p>{T.translate('Now go build something great')}.</p>
 		<h1>Go To</h1>
 		<ul>
-			<li>
-				<Link to="/page-2">Page 2</Link>
-			</li>
-			<li>
-				<Link to="/404">404 Error</Link>
-			</li>
 			<li>
 				<Link to="/contact">Contact</Link>
 			</li>
@@ -37,6 +39,9 @@ const IndexPage = ({ pageContext: { lang }, location }) => (
 			</li>
 			<li>
 				<Link to="/legal">Legal</Link>
+			</li>
+			<li>
+				<Link to="/404">404 Error</Link>
 			</li>
 		</ul>
 	</Layout>

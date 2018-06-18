@@ -1,23 +1,19 @@
 /* global tw */
 import React from 'react'
 import styled from 'react-emotion'
-import { injectGlobal } from 'emotion'
+// eslint-disable-next-line
+import Theme from '../styles/theme'
 
 import Head from './head'
 import Header from './header'
 import languages from '../locales/languages'
 import Lang from './lang'
 
-injectGlobal`
-  body { ${tw('m-0 font-sans font-light text-blue-darkest')} }
-	a { ${tw('no-underline text-blue-darker')} }
-	h1, h2 { ${tw('my-4 mx-0 font-light')} }
-`
 const Container = styled('div')`
-	${tw('flex flex-col bg-blue-lightest min-h-screen')};
+	${tw('flex flex-col min-h-screen')};
 `
 const Wrapper = styled('div')`
-	${tw('p-4 container')};
+	${tw('p-4')};
 `
 
 export default ({ children, path, seo }) => (

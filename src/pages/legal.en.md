@@ -6,20 +6,20 @@ langKey: 'en'
 ---
 # Legal Informations
 
-**Name:** Tom Pichaud
+**Name** Tom Pichaud
 
-**Company:** Wise Starter company | Capital of 1.000€
+**Company** Wise Starter company | Capital of 1.000€
 
-**Address:** UK
+**Address** UK
 
-**Email:** contact@email.me
+**Email** contact@email.me
 
-**Phone:** +33 6 00 00 00 00
+**Phone** +33 6 00 00 00 00
 
-**Immatriculation / Registration:** FR00000000000 | Issued by the Sate
-**VAT:** FR00000000000
+**Immatriculation / Registration** FR00000000000 | Issued by the Sate
+**VAT** FR00000000000
 
-**Web Host:** [Netlify](https://www.netlify.com)
+**Website hosted by** [Netlify](https://www.netlify.com)
 
 # Terms of Service
 
@@ -87,4 +87,4 @@ This policy is effective as of 28 May 2018.
 
 | Source | Personal Data | Reason | Handling | Disposal | Consent |
 | --- | --- | --- | --- | --- |:---:|
-| Contact Form | Name and Email | Customer relationship management | Netlify database, Administrator only | Upon Request | ✓ |
+| Contact Form | Name & Email | Customer relationship management | Netlify database, Administrator only | Upon Request | ✓ |
