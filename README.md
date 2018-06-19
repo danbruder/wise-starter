@@ -1,3 +1,5 @@
+> Web Dev isn't my job, I just like doing it. So please feel free to help me improve my code and workflow.
+
 # Wise starter for Gatsby on Netlify
 [![Build Status](https://travis-ci.org/TomPichaud/wise-starter.svg?branch=master)](https://travis-ci.org/TomPichaud/wise-starter)
 
@@ -14,8 +16,6 @@
 - [ ] Fathom Analytics
 
 Demo: https://wise-starter.netlify.com
-
-# Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TomPichaud/wise-starter)
 
