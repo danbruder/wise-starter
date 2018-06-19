@@ -22,11 +22,11 @@ Demo: https://wise-starter.netlify.com
 # Thinking Lab
 
 - [ ] Page Transitions
-- [ ] SmoothScroll
+- [ ] Smooth Scroll
 
 # To Fix
 
-- [ ] Anchor Link not scrolling : [issue 5314](https://github.com/gatsbyjs/gatsby/issues/5314)
+- [ ] Clean CSS
 
 # Subfont
 
