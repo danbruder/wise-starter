@@ -10,7 +10,9 @@ const ContactPage = ({ pageContext: { lang }, location }) => (
 	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
 		<Helmet title={T.translate('contact.title')} />
-		<h1>{T.translate('contact.header')}</h1>
+		<h1>
+			{'{'} {T.translate('contact.header')}
+		</h1>
 		<Form name="contact" action="/thanks">
 			<input
 				type="text"

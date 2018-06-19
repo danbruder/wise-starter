@@ -9,7 +9,9 @@ const ObliviatePage = ({ pageContext: { lang }, location }) => (
 	<Layout path={location.pathname}>
 		{T.setTexts(lang)}
 		<Helmet title={T.translate('obliviate.title')} />
-		<h1>{T.translate('obliviate.header')}</h1>
+		<h1>
+			{'{'} {T.translate('obliviate.header')}
+		</h1>
 		<Form name="obliviate" action="/thanks">
 			<input
 				type="email"

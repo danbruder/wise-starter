@@ -14,7 +14,9 @@ const IndexPage = ({ pageContext: { lang }, location }) => (
 	<Layout path={location.pathname} seo={seo}>
 		{T.setTexts(lang)}
 		<Helmet title={T.translate('home.title')} />
-		<h1>{T.translate('home.header')} !</h1>
+		<h1>
+			{'{'} {T.translate('home.header')} !
+		</h1>
 		<T.p
 			text={{
 				key: 'home.welcome',
