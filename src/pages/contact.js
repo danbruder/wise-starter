@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import T from 'i18n-react'
-import { Link } from 'gatsby'
+import Link from '../components/link'
 
 import Layout from '../components/layout'
 import Form from '../components/form'
