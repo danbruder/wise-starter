@@ -50,9 +50,9 @@ const ContactPage = ({ pageContext: { lang }, location }) => (
 					text={{
 						key: 'contact.consent.message',
 						var: (
-							<a href="/legal#privacy-policy" target="_blank">
+							<Link to="/legal#privacy-policy">
 								{T.translate('contact.consent.link')}
-							</a>
+							</Link>
 						)
 					}}
 				/>

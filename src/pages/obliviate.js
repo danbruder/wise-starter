@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import T from 'i18n-react'
 
+import Link from '../components/link'
 import Layout from '../components/layout'
 import Form from '../components/form'
 
@@ -25,9 +26,9 @@ const ObliviatePage = ({ pageContext: { lang }, location }) => (
 				text={{
 					key: 'obliviate.message',
 					var: (
-						<a href="/legal#privacy-policy" target="_blank">
+						<Link to="/legal#privacy-policy" target="_blank">
 							{T.translate('obliviate.link')}
-						</a>
+						</Link>
 					)
 				}}
 			/>
