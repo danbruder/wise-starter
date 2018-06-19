@@ -34,3 +34,15 @@ Demo: https://wise-starter.netlify.com
 
 package.json
 `"build": "gatsby build && subfont public -i"`
+
+# Lighthouse Audit
+
+`Hosted on Netlify`
+
+| Categories     | Results |
+| -------------- |:-------:|
+| Performance    | 100%    |
+| PWA            | 100%    |
+| Accessibility  | 100%    |
+| Best Practices | 100%    |
+| SEO            | 100%    |
